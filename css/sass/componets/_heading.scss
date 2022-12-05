@@ -1,0 +1,30 @@
+.section-header{
+    margin-bottom: 80px;
+    font-size: 30px;
+ 
+   text-transform: uppercase;
+   &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+ top: 52px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $mainColor;
+    background-color: white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: $mainColor;
+   top: 60px;
+    width: 175px;
+  }
+}
