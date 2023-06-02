@@ -3,7 +3,7 @@
     color: white;
     text-align: center;
     @include main-prop;
-    background-image: url("../../../imgs/landing-02.jpg");
+    background-image: url("../imgs/landing-02.jpg");
   
     .overlay {
       @include overlay;
