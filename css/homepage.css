@@ -1336,6 +1336,7 @@ ul, ol {
 .skills .skills-sections .skill-feat h3 {
   margin-bottom: 20px;
   font-size: 23px;
+  color: inherit;
 }
 .skills .skills-sections .skill-feat div {
   margin-bottom: 10px;
