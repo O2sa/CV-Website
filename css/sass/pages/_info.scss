@@ -1,0 +1,96 @@
+// Start Info
+.info {
+    text-align: center;
+    @include main-prop;
+  
+    .person-info {
+      display: flex;
+  
+      .person-img {
+        img {
+          border: 4px solid var(--main-color);
+          border-color: transparent var(--main-color) var(--main-color) transparent;
+          padding: 4px;
+          border-radius: 10px;
+          width: 160px;
+          transition: all 0.3s;
+  
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+  
+      .person-about {
+        margin-left: 5%;
+        width: 70%;
+        text-align: left;
+        ul{
+            text-align: center;
+            margin-top: 30px;
+            li{
+                display: inline-block;
+                margin-right: 20px;
+        i{
+            transition: 0.3s;
+            font-size: 30px;
+            cursor: pointer;
+
+            &:hover{
+                color: var(--main-color) !important;
+            }
+        }
+    }
+    }
+        .name {
+          font-size: 22px;
+          margin-bottom: 20px;
+          color: #414040;
+        }
+  
+        .details {
+        //   display: flex;
+        //   justify-content: space-around;
+        //   flex-wrap: wrap;
+        //   align-content: space-between;
+          height: 60px;
+
+    text-align: center;
+          li {
+            font-size: 16px;
+            padding-left: 4px;
+            width: calc(100% / 2);
+            // border: 4px solid $secondColor;
+            // border-color: transparent transparent transparent var(--main-color);
+          }
+        }
+  
+        span {
+          font-weight: bold;
+          color: #333;
+        }
+      }
+  
+      @media #{$maxMobile} {
+        flex-direction: column;
+  
+        .person-img {
+          margin-bottom: 40px;
+        }
+  
+        .person-about {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  
+    .info-sum {
+      margin-top: 25px;
+      color: #818080;
+      line-height: 1.5;
+      font-size: 20px;
+    }
+  }
+  
+  // End Info

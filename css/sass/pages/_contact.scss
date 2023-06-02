@@ -1,0 +1,135 @@
+$color_1: #fff;
+$color_2: var(--main-color);
+$background-color_1: rgba(0, 0, 0, 0.6);
+$background-color_2: rgba(218, 218, 218, 0.19);
+$background-color_3: var(--main-color);
+$background-color_4: #333;
+$border-color_1: transparent;
+
+/* Start contact  */
+/* End contact  */
+/* Start Footer */
+/* End Footer */
+.contact {
+	position: relative;
+	background-image: url("../imgs/landing-02.jpg");
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-size: cover;
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $background-color_1;
+	}
+	h2 {
+		color: $color_1;
+		font-weight: bold;
+		font-size: 30px;
+		margin: 0 0 60px;
+		text-align: center;
+		text-shadow: -3px -4px 2px black;
+	}
+	form {
+		overflow: hidden;
+		max-width: 800px;
+		margin: auto;
+		.left {
+			float: left;
+			width: 49%;
+		}
+		.right {
+			float: right;
+			width: 49%;
+		}
+		input {
+			&:not([type="submit"]) {
+				display: block;
+				padding: 10px;
+				margin-bottom: 15px;
+				width: 100%;
+				border: 1px solid #ccc;
+				background-color: $background-color_2;
+				&:focus {
+					outline: 1px solid var(--main-color);
+				}
+			}
+			height: 40px;
+			&:not[type="submit"] {
+				&:focus {
+					&::-webkit-input-placeholder {
+						opacity: 0;
+						transition: .3s;
+					}
+					&::-ms-input-placeholder {
+						opacity: 0;
+						transition: .3s;
+					}
+				}
+			}
+			&:focus {
+				&::placeholder {
+					opacity: 0;
+					transition: .3s;
+				}
+			}
+		}
+		textarea {
+			display: block;
+			padding: 10px;
+			margin-bottom: 15px;
+			width: 100%;
+			border: 1px solid #ccc;
+			background-color: $background-color_2;
+			height: 150px;
+			&:focus {
+				outline: 1px solid var(--main-color);
+				&::-webkit-input-placeholder {
+					opacity: 0;
+					transition: .3s;
+				}
+				&::-ms-input-placeholder {
+					opacity: 0;
+					transition: .3s;
+				}
+				&::placeholder {
+					opacity: 0;
+					transition: .3s;
+				}
+			}
+		}
+		input[type="submit"] {
+			background-color: $background-color_3;
+			padding: 10px;
+			width: 100%;
+			border-color: $border-color_1;
+			cursor: pointer;
+			color: $color_1;
+		}
+	}
+}
+.footer {
+	text-align: center;
+	background-color: $background-color_4;
+	padding: 20px;
+	color: $color_1;
+	span {
+		color: $color_2;
+	}
+}
+@media (max-width: 767px) {
+	.contact {
+		form {
+			.left {
+				width: 100%;
+				float: none;
+			}
+			.right {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}

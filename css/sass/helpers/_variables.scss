@@ -3,6 +3,9 @@ $maxSmall:"(max-width:991px)";
 $minSmall:"(min-width:768px)";
 $minMedium:"(min-width:992px)";
 $minLarge:"(min-width:1200px)";
-
 $mainColor:#e91eba;
 $secondColor:#9c9c9c;
+:root {
+    --main-color   : #ff9800;
+    --setting-width: 178px;
+  }

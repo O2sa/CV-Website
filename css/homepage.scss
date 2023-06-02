@@ -4,7 +4,16 @@
 @import "./sass/layout/header";
 @import "./sass/pages/globalPages";
 @import "./sass/pages/home";
-@import "./sass/componets/heading";
-@import "./sass/componets/buttons";
+@import "./sass/helpers/heading";
+@import "./sass/helpers/buttons";
+// @import "./sass/layout/footer";
 
-@import "./sass/layout/footer";
+@import "./sass/pages/landing";
+@import "./sass/pages/info";
+@import "./sass/pages/education";
+@import "./sass/pages/experience";
+@import "./sass/pages/setting-box";
+@import "./sass/pages/timeline";
+@import "./sass/pages/contact";
+@import "./sass/pages/bullets";
+@import "./sass/pages/skills";

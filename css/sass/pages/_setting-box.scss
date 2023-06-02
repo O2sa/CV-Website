@@ -1,0 +1,136 @@
+
+
+
+
+
+
+$color_1: #666;
+$color_2: #fff;
+$background-color_1: #fff;
+$background-color_2: #eee;
+$background-color_3: #ff9800;
+$background-color_4: #1ea5e9;
+$background-color_5: #e91eba;
+$background-color_6: #4a1ee9;
+$background-color_7: #e9d11e;
+$background-color_8: #008988;
+$background-color_9: var(--main-color);
+$border-color_1: #fff;
+
+/* Start Setting Box */
+.setting-box {
+	position: fixed;
+	top: 0;
+	left: -200px;
+	background-color: $background-color_1;
+	width: 200px;
+	z-index: 100;
+	min-height: 100vh;
+	transition: .3s;
+	border: 1px solid #676767;
+	.toggle-setting {
+		position: absolute;
+		right: -30px;
+		top: 100px;
+		background-color: $background-color_1;
+		text-align: center;
+		cursor: pointer;
+		i {
+			width: 30px;
+			margin: 8px 0;
+		}
+	}
+	.option-box {
+		padding: 10px;
+		text-align: center;
+		margin: 10px;
+		background-color: $background-color_2;
+		h4 {
+			margin: 0;
+			color: $color_1;
+			font-size: 14px;
+		}
+		.colors-list {
+			list-style: none;
+			text-align: center;
+			padding: 0;
+			margin: 10px 0 0;
+			li {
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+				border-radius: 50%;
+				display: inline-block;
+				opacity: 0.5;
+				border: 3px solid #eee;
+				&:first-child {
+					background-color: $background-color_3;
+				}
+				&:nth-child(2) {
+					background-color: $background-color_4;
+				}
+				&:nth-child(3) {
+					background-color: $background-color_5;
+				}
+				&:nth-child(4) {
+					background-color: $background-color_6;
+				}
+				&:nth-child(5) {
+					background-color: $background-color_7;
+				}
+			}
+			li.active {
+				opacity: 1;
+				border-color: $border-color_1;
+			}
+		}
+		.yes {
+			width: 50px;
+			background-color: $background-color_8;
+			color: $color_2;
+			margin-top: 10px;
+			font-size: 14px;
+			opacity: 0.5;
+			padding: 4px 10px;
+			border-radius: 4px;
+			display: inline-block;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.no {
+			width: 50px;
+			background-color: $background-color_8;
+			color: $color_2;
+			margin-top: 10px;
+			font-size: 14px;
+			opacity: 0.5;
+			padding: 4px 10px;
+			border-radius: 4px;
+			display: inline-block;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		span.active {
+			opacity: 1;
+		}
+	}
+	.reset-optinos {
+		cursor: pointer;
+		background-color: $background-color_9;
+		color: $color_2;
+		padding: 10px;
+		width: 178px;
+		font-weight: bold;
+		margin: 10px auto;
+		display: block;
+		border-radius: 4px;
+		opacity: .7;
+		border: none;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.setting-box.open {
+	left: 0;
+}

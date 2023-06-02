@@ -28,7 +28,7 @@
 */
 @mixin prefixer($prop, $val, $prefixes: (webkit,moz)) {
   @each $prefix in $prefixes {
-    #{'-' + $prefix +'-'+$prop}: $val;
+    #{'-' + $prefix + '-' + $prop}: $val;
   }
   #{$prop}: $val;
 }

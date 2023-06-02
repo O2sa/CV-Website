@@ -1,0 +1,37 @@
+
+
+// ٍStart Landing
+.landing {
+    height: 100vh;
+    background-image: url("../../../imgs/landing-01.jpg");
+    background-size: cover;
+    position: relative;
+  
+    .overlay {
+      @include overlay;
+    }
+  
+    .text {
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 80%;
+  
+      h2 {
+        color: white;
+        color: white;
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        color: #dadada;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  // End Landing
