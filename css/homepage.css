@@ -212,7 +212,7 @@ ul, ol {
   background-color: #eee;
   position: relative;
   background-size: cover;
-  background-image: url("../../../imgs/landing-02.jpg");
+  background-image: url("../imgs/landing-02.jpg");
 }
 .education .overlay {
   position: absolute;
