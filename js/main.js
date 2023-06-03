@@ -184,7 +184,7 @@ let allBullets = document.querySelectorAll(".nav-bullets .bullet");
 moveSection(allBullets);
 
 // Animate header links
-let allLinks = document.querySelectorAll(".header-area .links span");
+let allLinks = document.querySelectorAll(".header-content .text li  span");
 moveSection(allLinks);
 
 // function move to any section
