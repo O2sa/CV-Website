@@ -5,7 +5,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
-  
+    .section-header{
+      color: #fff;
+    }
     &::before {
       content: "";
       width: 50%;
